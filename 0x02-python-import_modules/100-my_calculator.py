@@ -5,7 +5,7 @@ if __name__ == "__main__":
     argc = len(argv) - 1
     if argc != 3:
         print("Usage: {} <a> <operator> <b>".format(argv[0]))
-    exit(1)
+        exit(1)
     a = int(argv[1])
     operator = argv[2]
     b = int(argv[3])
@@ -20,5 +20,5 @@ if __name__ == "__main__":
         result = div(a, b)
     else:
         print("Unknown operator. Available operators: +, -, * and /")
-    exit(1)
+        exit(1)
     print("{:d} {} {:d} = {:d}".format(a, operator, b, result))
